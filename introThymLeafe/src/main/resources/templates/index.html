@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Inicio - Thymleaf</title>
+</head>
+<body>
+    <h1 th:text="${mensajeBienvenida}">TITULO DE RELLENO</h1>
+    <p>Hola <span th:text="${nombre}">nombre</span> ¡Bievenido al sistema!</p>
+    <hr>
+    <h3>Menu de navegacion</h3>
+    <ul>
+        <li><a th:href="@{/saludo}">Ver saludo dinamico</a></li>
+        <li><a th:href="@{/catalogo}">Ver catalogo de videjuegos</a></li>
+    </ul>
+</body>
+</html>
